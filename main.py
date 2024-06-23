@@ -59,7 +59,7 @@ if __name__ == "__main__":
             if keyboard.is_pressed(trigger_key):
                 perform_action(trigger_key, subsequent_key, wait_time)
                 while keyboard.is_pressed(trigger_key):
-                    time.sleep(0.1)
+                    time.sleep(0.001)
         except Exception as e:
             print(f"An error occurred: {e}")
             break
